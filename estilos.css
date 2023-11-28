@@ -1,0 +1,20 @@
+body {
+  width: 800px;
+  padding: 4em;
+}
+
+dm-vars {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0.5em;
+  width: 600px;
+}
+
+input:read-only {
+  background-color: #ddd;
+}
+
+pre {
+  background: #ddf;
+  padding: 0.5em;
+}
