@@ -38,7 +38,7 @@ function update() {
     // atualiza projected
     let projected = pace * PERIODOS_RESTANTES + completed;
     if (Number.isFinite(projected)) {
-        $projected.value = projected;
+        $projected.value = Math.trunc(projected);
     } else {
         $projected.value = "";
     }
