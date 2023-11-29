@@ -1,6 +1,12 @@
+html {
+  background: gray;
+}
+
 body {
   width: 800px;
   padding: 4em;
+  background: white;
+  font-size: 120%;
 }
 
 dm-vars {
@@ -17,4 +23,5 @@ input:read-only {
 pre {
   background: #ddf;
   padding: 0.5em;
+  /* display: none; */
 }

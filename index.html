@@ -3,18 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Devo migrar?</title>
-  <link rel="stylesheet" href="estilos.css">
   <script type="module" src="app.js"></script>
+  <!-- link rel="stylesheet" href="estilos.css" -->
+  <style>
+    html {
+      background: gray;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      width: 800px;
+      padding: 2em;
+      background: white;
+      font-size: 150%;
+    }
+
+    dm-vars {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 0.5em;
+      width: 100%;
+    }
+
+    input:read-only {
+      background-color: #ddd;
+    }
+
+    pre {
+      background: #ddf;
+      padding: 0.5em;
+      display: none;
+    }
+
+    #message {
+      margin-top: 4em;
+    }
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <h1>Devo migrar para a nova grade?</h1>
 
+  <p>
+
+    Esta página foi criada pela coordenação de curso como uma forma de
+    proporcionar orientação geral para os alunos na migração para o novo
+    currículo do curso. A ideia orientar você com base no seu perfil
+    de execução curricular, partindo de dois dados apenas: i) <em>o número de
+    períodos integralizados</em>; e ii) <em>o número de créditos
+    integralizados.</em> Você acha esses dois dados no seu histórico escolar.
+    Digite os dados abaixo, para receber a orientação que melhor se adequa a
+    seu caso. Leia a orientação com atenção antes de optar por migrar.
+
+  </p>
+
   <dm-vars>
     <label>Número de períodos cursados?</label> <input id="periodos" type="text">
     <label>Total de créditos integralizados?</label> <input id="completed" type="text">
-    <label>Créditos restantes:</label> <input id="acursar" type="text" readonly tabindex="-1">
-    <label>Velocidade média (limitada):</label> <input id="pace" type="text" readonly tabindex="-1">
-    <label>Créditos projetados possíveis até 2025.2:</label> <input id="projected" type="text" readonly tabindex="-1">
+    <label>Créditos que faltam:</label> <input id="acursar" type="text" readonly tabindex="-1">
+    <label>Velocidade média (esperada/limitada):</label> <input id="pace" type="text" readonly tabindex="-1">
+    <label>Créditos projetados/possíveis até 2025.2:</label> <input id="projected" type="text" readonly tabindex="-1">
   </dm-vars>
 
   <div id="message"></div>
